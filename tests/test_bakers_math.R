@@ -1,4 +1,4 @@
-# testthat::test_dir("./tests")
+# Rscript -e 'testthat::test_file("tests/test_bakers_math.R")'
 library(testthat)
 
 source("../bakers_math.R")
@@ -174,12 +174,12 @@ test_that("The expected results for Saturday White Bread.", {
             notes = "In A 70 degree kitchen, the bulk fermentation should take about 5 hours.  The proof time in the same, is about 1 1/4 hours.")
     
     saturday_white_bread_bakers_yeast_test <- bakers_math(object1 = saturday_white_bread)
-    # setwd("./tests")
+    # setwd("tests")5
     # saturday_white_bread_bakers_yeast <- saturday_white_bread_bakers_yeast_test
     # cat(saturday_white_bread_bakers_yeast)
-    # save(saturday_white_bread_bakers_yeast, file = "./saturday_white_bread_bakers_yeast.RData")
+    # save(saturday_white_bread_bakers_yeast, file = "saturday_white_bread_bakers_yeast.RData")
     
-    load("./saturday_white_bread_bakers_yeast.RData")
+    load("saturday_white_bread_bakers_yeast.RData")
     
     expect_identical(saturday_white_bread_bakers_yeast_test, saturday_white_bread_bakers_yeast)
 })
@@ -197,12 +197,12 @@ test_that("The expected results for Saturday Wheat Bread.", {
             notes = "In A 70 degree kitchen, the bulk fermentation should take about 5 hours.  The proof time in the same, is about 1 1/4 hours.")
     
     saturday_wheat_bread_bakers_yeast_test <- bakers_math(object1 = saturday_wheat_bread)
-    # setwd("./tests")
+    # setwd("tests")
     # saturday_wheat_bread_bakers_yeast <- saturday_wheat_bread_bakers_yeast_test
     # cat(saturday_wheat_bread_bakers_yeast)
-    # save(saturday_wheat_bread_bakers_yeast, file = "./saturday_wheat_bread_bakers_yeast.RData")
+    # save(saturday_wheat_bread_bakers_yeast, file = "saturday_wheat_bread_bakers_yeast.RData")
     
-    load("./saturday_wheat_bread_bakers_yeast.RData")
+    load("saturday_wheat_bread_bakers_yeast.RData")
     
     expect_identical(saturday_wheat_bread_bakers_yeast_test, saturday_wheat_bread_bakers_yeast)
 })
@@ -229,12 +229,12 @@ test_that("The expected results for Pain De Campagne.", {
             notes = "In a 70 deg kitchen, bulk fermentation should take about 5 hours.  In the fridge, the proof time is between 12-14 hours.")
     
     pain_de_campagne_1mature_4white_1wheat_4water_test <- bakers_math(object1 = starter_1mature_4white_1wheat_4water, object2 = pain_de_campagne)
-    # setwd("./tests")
+    # setwd("tests")
     # pain_de_campagne_1mature_4white_1wheat_4water <- pain_de_campagne_1mature_4white_1wheat_4water_test
     # cat(pain_de_campagne_1mature_4white_1wheat_4water)
-    # save(pain_de_campagne_1mature_4white_1wheat_4water, file = "./pain_de_campagne_1mature_4white_1wheat_4water.RData")
+    # save(pain_de_campagne_1mature_4white_1wheat_4water, file = "./tests/pain_de_campagne_1mature_4white_1wheat_4water.RData")
     
-    load("./pain_de_campagne_1mature_4white_1wheat_4water.RData")
+    load("pain_de_campagne_1mature_4white_1wheat_4water.RData")
     
     expect_identical(pain_de_campagne_1mature_4white_1wheat_4water_test, pain_de_campagne_1mature_4white_1wheat_4water)
 })
@@ -260,12 +260,12 @@ test_that("The expected results for Overnight Country Blonde.", {
             notes = "In a 70 deg kitchen, bulk fermentation should take 12-15 hours and the proof time should be about 4 hours.")
     
     overnight_country_blonde_1mature_4white_1wheat_4water_test <- bakers_math(object1 = starter_1mature_4white_1wheat_4water, object2 = overnight_country_blonde)
-    # setwd("./tests")
+    # setwd("tests")
     # overnight_country_blonde_1mature_4white_1wheat_4water <- overnight_country_blonde_1mature_4white_1wheat_4water_test
     # cat(overnight_country_blonde_1mature_4white_1wheat_4water)
-    # save(overnight_country_blonde_1mature_4white_1wheat_4water, file = "./overnight_country_blonde_1mature_4white_1wheat_4water.RData")
+    # save(overnight_country_blonde_1mature_4white_1wheat_4water, file = "overnight_country_blonde_1mature_4white_1wheat_4water.RData")
     
-    load("./overnight_country_blonde_1mature_4white_1wheat_4water.RData")
+    load("overnight_country_blonde_1mature_4white_1wheat_4water.RData")
     
     expect_identical(overnight_country_blonde_1mature_4white_1wheat_4water_test, overnight_country_blonde_1mature_4white_1wheat_4water)
 })
